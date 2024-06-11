@@ -7,13 +7,7 @@ namespace DevOpsDemo.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        IPostRepository _postRepository;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        private readonly IPostRepository _postRepository;
 
         public HomeController(IPostRepository postRepository)
         {
